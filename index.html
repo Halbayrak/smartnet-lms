@@ -10,56 +10,52 @@
     <div class="sidebar">
         <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
         <div class="category">Satış İşlemleri Modülü</div>
-        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_intro')">Ders 1: Satış Teklifine Giriş</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_creation')">Ders 2: Satış Teklifi Oluşturma</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_approval')">Ders 3: Satış Teklifi Onaylama</a></div>
-        
-        <div class="category">Alış İşlemleri Modülü</div>
-        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_intro')">Ders 1: Alış Teklifine Giriş</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_creation')">Ders 2: Alış Teklifi Oluşturma</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_approval')">Ders 3: Alış Teklifi Onaylama</a></div>
-        
-        <div class="category">Sevkiyat İşlemleri Modülü</div>
-        <div class="lesson"><a href="#" onclick="loadLesson('shipment_order_entry')">Ders 1: Sevk Emri Girişi</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('shipment_approval')">Ders 2: Sevk Onaylama</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('transfer_between_warehouses')">Ders 3: Depolar Arası Transfer</a></div>
+        <div class="lesson"><a href="#ders1">Ders 1: Satış Teklifine Giriş</a></div>
+        <div class="lesson"><a href="#ders2">Ders 2: Satış Teklifi Oluşturma</a></div>
+        <div class="lesson"><a href="#ders3">Ders 3: Satış Teklif Onaylama</a></div>
     </div>
     
     <div class="content">
-        <h2>SMARTNET VİDEOLAR</h2>
-        <input type="text" class="search-bar" placeholder="Arama...">
+        <h2 id="ders1">Ders 1: Satış Teklifine Giriş</h2>
+        <!-- Ders 1 içeriği -->
         
-        <div class="video-filter">
-            <select>
-                <option>İşlem Tipi</option>
-                <option>Satış</option>
-                <option>Alış</option>
-                <option>Sevkiyat</option>
-            </select>
-            <select>
-                <option>Satış Şubesi</option>
-                <option>İstanbul</option>
-                <option>Ankara</option>
-                <option>İzmir</option>
-            </select>
-            <select>
-                <option>Sevk Şubesi</option>
-                <option>Merkez</option>
-                <option>Depo</option>
-            </select>
-            <select>
-                <option>Ürün</option>
-                <option>İnşaat Demiri</option>
-                <option>Çelik Hasır</option>
-            </select>
-        </div>
+        <h2 id="ders2">Ders 2: Satış Teklifi Oluşturma</h2>
+        <!-- Ders 2 içeriği -->
         
-        <div class="video-container" id="lesson-content">
-            <h3>Örnek Video</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/sample-video" allowfullscreen></iframe>
-        </div>
+        <h2 id="ders3">Ders 3: Satış Teklif Onaylama</h2>
+        
+        <h3>Adım 1: Satış Teklif Onaylama Sayfasına Giriş</h3>
+        <p>Bu alan neden önemli? Satış teklifinin yürürlüğe girmesi için yetkili kişi tarafından onaylanması gerekmektedir.</p>
+        <p><strong>Nasıl erişilir?</strong></p>
+        <ul>
+            <li>Satış İşlemleri menüsüne girin.</li>
+            <li>Satış Teklif Onaylama seçeneğini seçin.</li>
+            <li>Açılan ekrandan onay bekleyen teklifleri görüntüleyebilirsiniz.</li>
+        </ul>
+        <img src="images/Satış_Teklif_Onaylama.png" alt="Satış Teklif Onaylama Giriş">
+        
+        <h3>Adım 2: Onay Bekleyen Teklifleri Görüntüleme</h3>
+        <p>Bu alan neden önemli? Mevcut ve geçmiş satış tekliflerinin onay durumunu gösterir.</p>
+        <p><strong>Filtreleme Seçenekleri:</strong></p>
+        <ul>
+            <li>Tarih aralığı belirleme</li>
+            <li>Müşteri adına göre arama yapma</li>
+            <li>Satış şubesine göre sıralama</li>
+        </ul>
+        <img src="images/Satış_Teklif_Onaylama_Giriş-1.png" alt="Onay Bekleyen Teklifler">
+        <img src="images/Satış_Teklif_Onaylama_Giriş-2.png" alt="Onay Bekleyen Teklifler 2">
+        
+        <h3>Adım 3: Teklif Onaylama ve Reddetme</h3>
+        <p>Bu alan neden önemli? Teklifin yürürlüğe girmesi veya revize edilmesi için onay ya da red işlemi yapılmalıdır.</p>
+        <p><strong>Seçenekler:</strong></p>
+        <ul>
+            <li>✅ <strong>Onay Ver:</strong> Teklif müşteriye sunulmak üzere onaylanır.</li>
+            <li>❌ <strong>Red Ver:</strong> Eksik veya hatalı bilgiler nedeniyle teklif reddedilir. Açıklama girilmesi faydalıdır.</li>
+            <li>🖨️ <strong>Yazdır:</strong> Teklif çıktısı alınabilir, müşteriye iletilir.</li>
+            <li>🗑️ <strong>Sil:</strong> Geçersiz teklifler sistemden kaldırılabilir.</li>
+        </ul>
+        <img src="images/Satış_Teklif_Onaylama.png" alt="Satış Teklif Onaylama">
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
