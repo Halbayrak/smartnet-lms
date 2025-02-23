@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>SMARTNET EĞİTİM DOKÜMANTASYONU</h2>
-
-        <!-- Satış İşlemleri Modülü -->
-        <div class="category">Satış İşlemleri Modülü</div>
-        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_intro')">Ders 1: Satış Teklifine Giriş</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_creation')">Ders 2: Satış Teklifi Oluşturma</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_approval')">Ders 3: Satış Teklif Onaylama</a></div>
-
-        <!-- Alış İşlemleri Modülü -->
-        <div class="category">Alış İşlemleri Modülü</div>
-        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_intro')">Ders 1: Alış Teklifine Giriş</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_creation')">Ders 2: Alış Teklifi Oluşturma</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_approval')">Ders 3: Alış Teklifi Onaylama</a></div>
-
-        <!-- Sevkiyat İşlemleri Modülü -->
-        <div class="category">Sevkiyat İşlemleri Modülü</div>
-        <div class="lesson"><a href="#" onclick="loadLesson('shipment_order_entry')">Ders 1: Sevk Emri Girişi</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('shipment_approval')">Ders 2: Sevk Onaylama</a></div>
-        <div class="lesson"><a href="#" onclick="loadLesson('transfer_between_warehouses')">Ders 3: Depolar Arası Transfer</a></div>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>SMARTNET EĞİTİM DOKÜMANTASYONU</h2>
+            <ul>
+                <li><a href="sales.html">Satış İşlemleri Modülü</a></li>
+                <li><a href="purchase.html">Alış İşlemleri Modülü</a></li>
+                <li><a href="shipment.html">Sevkiyat İşlemleri Modülü</a></li>
+                <li><a href="reports.html">Raporlar</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>SMARTNET VİDEOLAR</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Arama...">
+            </div>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/sample-video" allowfullscreen></iframe>
+            </div>
+        </main>
     </div>
-    
-    <!-- Main Content -->
-    <div class="content" id="lesson-content">
-        <h2>SMARTNET VİDEOLAR</h2>
-        <p>Lütfen bir ders seçiniz.</p>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>

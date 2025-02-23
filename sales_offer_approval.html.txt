@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satış Teklif Onaylama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ders 3: Satış Teklif Onaylama</h1>
+        
+        <h2>Adım 1: Satış Teklif Onaylama Sayfasına Giriş</h2>
+        <p><strong>Bu alan neden önemli?</strong> Satış teklifinin yürürlüğe girmesi için yetkili kişi tarafından onaylanması gerekmektedir.</p>
+        <p><strong>Nasıl erişilir?</strong></p>
+        <ul>
+            <li>Satış İşlemleri menüsüne girin.</li>
+            <li>Satış Teklif Onaylama seçeneğini seçin.</li>
+            <li>Açılan ekrandan onay bekleyen teklifleri görüntüleyebilirsiniz.</li>
+        </ul>
+        <img src="images/satis_teklif_onaylama_giris.png" alt="Satış Teklif Onaylama Giriş">
+
+        <h2>Adım 2: Onay Bekleyen Teklifleri Görüntüleme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Mevcut ve geçmiş satış tekliflerinin onay durumunu gösterir.</p>
+        <p><strong>Filtreleme Seçenekleri:</strong></p>
+        <ul>
+            <li>Tarih aralığı belirleme</li>
+            <li>Müşteri adına göre arama yapma</li>
+            <li>Satış şubesine göre sıralama</li>
+        </ul>
+        <img src="images/onay_bekleyen_teklifler.png" alt="Onay Bekleyen Teklifler">
+
+        <h2>Adım 3: Teklif Onaylama ve Reddetme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Teklifin yürürlüğe girmesi veya revize edilmesi için onay ya da red işlemi yapılmalıdır.</p>
+        <ul>
+            <li>✅ <strong>Onay Ver:</strong> Teklif müşteriye sunulmak üzere onaylanır.</li>
+            <li>❌ <strong>Red Ver:</strong> Eksik veya hatalı bilgiler nedeniyle teklif reddedilir.</li>
+            <li>🖨️ <strong>Yazdır:</strong> Teklif çıktısı alınabilir.</li>
+            <li>🗑️ <strong>Sil:</strong> Geçersiz teklifler sistemden kaldırılabilir.</li>
+        </ul>
+        <img src="images/satis_teklif_onaylama.png" alt="Satış Teklif Onaylama">
+
+        <a href="sales.html">Geri Dön</a>
+    </div>
+</body>
+</html>
