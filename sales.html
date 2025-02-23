@@ -7,14 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">Satış İşlemleri</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sales_offer_intro.html">Ders 1: Satış Teklifine Giriş</a></li>
+                        <li><a href="sales_offer_creation.html">Ders 2: Satış Teklifi Oluşturma</a></li>
+                        <li><a href="sales_offer_approval.html">Ders 3: Satış Teklifi Onaylama</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <h1>Satış İşlemleri Modülü</h1>
-        <ul>
-            <li><a href="sales_offer_intro.html">Ders 1: Satış Teklifine Giriş</a></li>
-            <li><a href="sales_offer_creation.html">Ders 2: Satış Teklifi Oluşturma</a></li>
-            <li><a href="sales_offer_approval.html">Ders 3: Satış Teklifi Onaylama</a></li>
-        </ul>
-        <a href="index.html">Geri Dön</a>
+        <main class="content">
+            <h1>Satış İşlemleri Modülü</h1>
+            <p>Satış işlemleri, SmartNet ERP sisteminde tekliflerin oluşturulması, onaylanması ve yönetilmesini içerir.</p>
+            
+            <h2>Dersler</h2>
+            <ul>
+                <li><a href="sales_offer_intro.html">Ders 1: Satış Teklifine Giriş</a></li>
+                <li><a href="sales_offer_creation.html">Ders 2: Satış Teklifi Oluşturma</a></li>
+                <li><a href="sales_offer_approval.html">Ders 3: Satış Teklifi Onaylama</a></li>
+            </ul>
+            
+            <h2>Satış Sürecinin Aşamaları</h2>
+            <ul>
+                <li><strong>Satış Teklifi:</strong> Müşteri için teklif hazırlanır ve sisteme kaydedilir.</li>
+                <li><strong>Teklif Onayı:</strong> Teklif yetkililer tarafından incelenerek onaylanır veya reddedilir.</li>
+                <li><strong>Fatura ve Sevkiyat:</strong> Onaylanan teklifler işleme alınarak faturalanır ve sevkiyat süreci başlatılır.</li>
+            </ul>
+            
+            <img src="images/sales_process.png" alt="Satış İşlemleri Modülü">
+            
+            <h2>Satış Modülü Kullanımı</h2>
+            <p>SmartNet ERP'de satış işlemlerine erişmek için:</p>
+            <ul>
+                <li>Ana menüden "Satış İşlemleri" sekmesine tıklayın.</li>
+                <li>İlgili işlem için aşağıdaki derslerden birini seçin:</li>
+                <ul>
+                    <li><a href="sales_offer_intro.html">Ders 1: Satış Teklifine Giriş</a></li>
+                    <li><a href="sales_offer_creation.html">Ders 2: Satış Teklifi Oluşturma</a></li>
+                    <li><a href="sales_offer_approval.html">Ders 3: Satış Teklifi Onaylama</a></li>
+                </ul>
+            </ul>
+        </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

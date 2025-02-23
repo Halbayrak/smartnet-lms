@@ -7,26 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
-        <div class="category">Alış İşlemleri Modülü</div>
-        <div class="lesson"><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></div>
-        <div class="lesson"><a href="purchase_offer_creation.html">Ders 2: Alış Teklifi Oluşturma</a></div>
-        <div class="lesson"><a href="purchase_offer_approval.html">Ders 3: Alış Teklifi Onaylama</a></div>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">Alış İşlemleri</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></li>
+                        <li><a href="purchase_offer_creation.html">Ders 2: Alış Teklifi Oluşturma</a></li>
+                        <li><a href="purchase_offer_approval.html">Ders 3: Alış Teklifi Onaylama</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main class="content">
+            <h1>Alış İşlemleri Modülü</h1>
+            <p>Alış işlemleri, satın alma tekliflerinin oluşturulması, onaylanması ve yönetilmesini içerir.</p>
+            
+            <h2>Dersler</h2>
+            <ul>
+                <li><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></li>
+                <li><a href="purchase_offer_creation.html">Ders 2: Alış Teklifi Oluşturma</a></li>
+                <li><a href="purchase_offer_approval.html">Ders 3: Alış Teklifi Onaylama</a></li>
+            </ul>
+            
+            <h2>Alış Sürecinin Aşamaları</h2>
+            <ul>
+                <li><strong>Alış Teklifi:</strong> Tedarikçiden fiyat teklifi alınarak sistemde oluşturulur.</li>
+                <li><strong>Teklif Onayı:</strong> Yetkililer tarafından incelenerek onaylanır veya reddedilir.</li>
+                <li><strong>Satın Alma Siparişi:</strong> Onaylanan teklifler siparişe dönüştürülerek işleme alınır.</li>
+            </ul>
+            
+            <img src="images/purchase_process.png" alt="Alış İşlemleri Modülü">
+            
+            <h2>Alış Modülü Kullanımı</h2>
+            <p>SmartNet ERP'de alış işlemlerine erişmek için:</p>
+            <ul>
+                <li>Ana menüden "Alış İşlemleri" sekmesine tıklayın.</li>
+                <li>İlgili işlem için aşağıdaki derslerden birini seçin:</li>
+                <ul>
+                    <li><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></li>
+                    <li><a href="purchase_offer_creation.html">Ders 2: Alış Teklifi Oluşturma</a></li>
+                    <li><a href="purchase_offer_approval.html">Ders 3: Alış Teklifi Onaylama</a></li>
+                </ul>
+            </ul>
+        </main>
     </div>
-
-    <div class="content">
-        <h1>Alış İşlemleri Modülü</h1>
-        <p>Bu modülde alış teklifleri oluşturma, onaylama ve takip etme süreçleri ele alınmaktadır.</p>
-        
-        <h2>Dersler:</h2>
-        <ul>
-            <li><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></li>
-            <li><a href="purchase_offer_creation.html">Ders 2: Alış Teklifi Oluşturma</a></li>
-            <li><a href="purchase_offer_approval.html">Ders 3: Alış Teklifi Onaylama</a></li>
-        </ul>
-        
-        <img src="images/Alış Teklifi Giriş.png" alt="Alış Teklifi Modülü Giriş">
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>

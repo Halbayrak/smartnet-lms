@@ -7,48 +7,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
-        <div class="category">Alış İşlemleri Modülü</div>
-        <div class="lesson"><a href="purchase.html">Geri: Alış İşlemleri Modülü</a></div>
-        <div class="lesson"><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></div>
-        <div class="lesson"><a href="purchase_offer_creation.html">Ders 2: Alış Teklifi Oluşturma</a></div>
-        <div class="lesson"><a href="purchase_offer_approval.html" class="active">Ders 3: Alış Teklifi Onaylama</a></div>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">Alış İşlemleri</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></li>
+                        <li><a href="purchase_offer_creation.html">Ders 2: Alış Teklifi Oluşturma</a></li>
+                        <li><a href="purchase_offer_approval.html" class="active">Ders 3: Alış Teklifi Onaylama</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main class="content">
+            <h1>Ders 3: Alış Teklifi Onaylama</h1>
+            
+            <h2>1. Alış Teklifi Onaylama Nedir?</h2>
+            <p>Alış teklifi onaylama süreci, tedarikçiler tarafından gönderilen tekliflerin incelenerek, sistemde onaylanmasını veya reddedilmesini içerir.</p>
+            
+            <h2>2. Onay Bekleyen Teklifleri Görüntüleme</h2>
+            <p>Onay sürecinde aşağıdaki adımları takip edin:</p>
+            <ul>
+                <li>Ana menüden <strong>Alış İşlemleri</strong> sekmesine tıklayın.</li>
+                <li><strong>Alış Teklifi Onaylama</strong> seçeneğini seçin.</li>
+                <li>Onay bekleyen alış teklifleri listelenecektir.</li>
+            </ul>
+            <img src="images/Alış_Teklif_Onaylama_Giris.png" alt="Alış Teklif Onaylama Giriş">
+            
+            <h2>3. Teklif Ayrıntılarını Görüntüleme</h2>
+            <p>Teklif detaylarını incelemek için ilgili teklif satırına tıklayın ve "Ayrıntılar" sekmesini açın:</p>
+            <ul>
+                <li><strong>Bağlı Firma:</strong> Teklifin hangi firmaya ait olduğu gösterilir.</li>
+                <li><strong>Sevk ve Çıkış Miktarları:</strong> Tedarik süreci için önemli olan miktarlar gösterilir.</li>
+                <li><strong>Bağlantı Tutarı ve Kalan Miktar:</strong> Alım sürecinde finansal durumu görmek için kullanılır.</li>
+                <li><strong>Teslimat Şekli:</strong> Ürünlerin nasıl teslim edileceği belirtilir.</li>
+                <li><strong>Fiyatlandırma ve Ödeme Detayları:</strong> Fiyat ve ödeme koşulları burada gösterilir.</li>
+            </ul>
+            <img src="images/Alış_Teklif_Ayrıntıları.png" alt="Alış Teklif Ayrıntıları">
+            
+            <h2>4. Teklif Onaylama veya Reddetme</h2>
+            <p>Teklif detaylarını inceledikten sonra şu işlemler yapılabilir:</p>
+            <ul>
+                <li>✅ <strong>Onay Ver:</strong> Teklif satın alma sürecine dahil edilir.</li>
+                <li>❌ <strong>Red Ver:</strong> Eksik veya yanlış teklifler iptal edilir.</li>
+                <li>📄 <strong>Teklif Detaylarını Görüntüle:</strong> Teklifin tüm bilgileri incelenebilir.</li>
+                <li>🖨️ <strong>Yazdır:</strong> Teklif çıktısı alınabilir.</li>
+                <li>🗑️ <strong>Sil:</strong> Geçersiz teklifler sistemden kaldırılabilir.</li>
+            </ul>
+            <img src="images/Alış_Teklif_Onaylama.png" alt="Alış Teklif Onaylama">
+        </main>
     </div>
-
-    <div class="content">
-        <h1>Ders 3: Alış Teklifi Onaylama</h1>
-
-        <h2>Adım 1: Alış Teklifi Onaylama Sayfasına Giriş</h2>
-        <p><strong>Bu alan neden önemli?</strong> Alış tekliflerinin yürürlüğe girmesi için yetkili kişi tarafından onaylanması gerekmektedir.</p>
-        <p><strong>Nasıl erişilir?</strong></p>
-        <ul>
-            <li>Alış İşlemleri menüsüne girin.</li>
-            <li>Alış Teklif Onaylama seçeneğini seçin.</li>
-            <li>Açılan ekrandan onay bekleyen teklifleri görüntüleyebilirsiniz.</li>
-        </ul>
-        <img src="images/Alış Teklif Onaylama Giriş.png" alt="Alış Teklif Onaylama Giriş">
-
-        <h2>Adım 2: Onay Bekleyen Teklifleri Görüntüleme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Mevcut ve geçmiş alış tekliflerinin onay durumunu gösterir.</p>
-        <p><strong>Filtreleme Seçenekleri:</strong></p>
-        <ul>
-            <li>Tarih aralığı belirleme</li>
-            <li>Tedarikçi adına göre arama yapma</li>
-            <li>Alış şubesine göre sıralama</li>
-        </ul>
-        <img src="images/Alış Teklif Onaylama Bekleyenler.png" alt="Onay Bekleyen Teklifler">
-
-        <h2>Adım 3: Teklif Onaylama ve Reddetme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Teklifin yürürlüğe girmesi veya revize edilmesi için onay ya da red işlemi yapılmalıdır.</p>
-        <p><strong>Seçenekler:</strong></p>
-        <ul>
-            <li>✅ <strong>Onay Ver:</strong> Teklif tedarikçiye sunulmak üzere onaylanır.</li>
-            <li>❌ <strong>Red Ver:</strong> Eksik veya hatalı bilgiler nedeniyle teklif reddedilir. Açıklama girilmesi faydalıdır.</li>
-            <li>🖨️ <strong>Yazdır:</strong> Teklif çıktısı alınabilir ve tedarikçiye iletilir.</li>
-            <li>🗑️ <strong>Sil:</strong> Geçersiz teklifler sistemden kaldırılabilir.</li>
-        </ul>
-        <img src="images/Alış Teklif Onaylama Ekranı.png" alt="Alış Teklif Onaylama Ekranı">
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>

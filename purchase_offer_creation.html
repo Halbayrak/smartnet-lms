@@ -7,84 +7,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
-        <div class="category">Alış İşlemleri Modülü</div>
-        <div class="lesson"><a href="purchase.html">Geri: Alış İşlemleri Modülü</a></div>
-        <div class="lesson"><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></div>
-        <div class="lesson"><a href="purchase_offer_creation.html" class="active">Ders 2: Alış Teklifi Oluşturma</a></div>
-        <div class="lesson"><a href="purchase_offer_approval.html">Ders 3: Alış Teklifi Onaylama</a></div>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">Alış İşlemleri</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></li>
+                        <li><a href="purchase_offer_creation.html" class="active">Ders 2: Alış Teklifi Oluşturma</a></li>
+                        <li><a href="purchase_offer_approval.html">Ders 3: Alış Teklifi Onaylama</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main class="content">
+            <h1>Ders 2: Alış Teklifi Oluşturma</h1>
+            
+            <h2>1. Yeni Alış Teklifi Nasıl Oluşturulur?</h2>
+            <p>SmartNet ERP'de yeni bir alış teklifi oluşturmak için şu adımları takip edin:</p>
+            <ul>
+                <li>Ana menüden <strong>Alış İşlemleri</strong> sekmesine tıklayın.</li>
+                <li><strong>Alış Teklifi</strong> seçeneğini seçin.</li>
+                <li>Yeni bir teklif oluşturmak için <strong>+ Yeni Ticari Alış Teklifi</strong> butonuna tıklayın.</li>
+            </ul>
+            <img src="images/01_Alış_Teklif_Giris.png" alt="Alış Teklifi Giriş 1">
+            
+            <h2>2. Teklif Detaylarının Girilmesi</h2>
+            <p>Yeni alış teklifi oluştururken aşağıdaki alanlar doldurulmalıdır:</p>
+            <ul>
+                <li><strong>Firma Adı:</strong> Tedarikçi firma seçimi yapılır.</li>
+                <li><strong>Tarih:</strong> Alış teklifinin oluşturulma tarihi belirlenir.</li>
+                <li><strong>Vade Tarihi:</strong> Teklifin geçerlilik süresi girilir.</li>
+                <li><strong>Döviz Tipi:</strong> Teklifin hangi para birimi ile yapılacağı belirlenir.</li>
+                <li><strong>Satış Şubesi:</strong> Alış işleminin hangi şubede gerçekleşeceği seçilir.</li>
+            </ul>
+            <img src="images/02_Doviz_Tipi_Secimi.png" alt="Döviz Tipi Seçimi">
+            
+            <h2>3. Teklif Kalemlerinin Eklenmesi</h2>
+            <p>Teklif detaylarının girilmesinin ardından, teklif edilecek ürünler eklenmelidir:</p>
+            <ul>
+                <li><strong>Ürün Açıklaması:</strong> Teklif edilecek ürünün açıklaması yazılır.</li>
+                <li><strong>Miktar ve Birim:</strong> Alınacak ürün miktarı belirlenir.</li>
+                <li><strong>Birim Fiyat:</strong> Ürün başına fiyat belirlenir.</li>
+                <li><strong>Depo Kodu:</strong> Ürünlerin depolandığı alan seçilir.</li>
+            </ul>
+            <img src="images/03_Teklif_Kalemleri.png" alt="Alış Teklifi Kayıtları">
+            
+            <h2>4. Teklifin Kaydedilmesi</h2>
+            <p>Tüm bilgiler girildikten sonra, <strong>Kaydet</strong> butonuna basılarak teklif sisteme kaydedilir.</p>
+            <ul>
+                <li><strong>Onay Bekleyen Teklifler:</strong> Teklif, yetkilendirme gerektiriyorsa onaya düşer.</li>
+                <li><strong>Onaylanan Teklifler:</strong> Teklif onaylandıktan sonra satın alma sürecine devam edilir.</li>
+            </ul>
+        </main>
     </div>
-
-    <div class="content">
-        <h1>Ders 2: Alış Teklifi Oluşturma</h1>
-
-        <h2>Adım 1: Alış Teklif Tarihini Girme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Alış teklifinin geçerlilik süreci bu tarihe bağlıdır.</p>
-        <ul>
-            <li><strong>Bugünün tarihi:</strong> Yeni teklif için kullanılır.</li>
-            <li><strong>Geçmiş tarih:</strong> Gerçekleşen fakat kaydedilmemiş teklifler için girilir.</li>
-            <li><strong>Gelecek tarih:</strong> Planlanan teklifler için belirlenir.</li>
-        </ul>
-        <img src="images/01 Alış Teklif Tarihi Seçimi.png" alt="Alış Teklif Tarihi Seçimi">
-
-        <h2>Adım 2: Vade Tarihini Belirleme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Tedarikçiye yapılacak ödemenin vadeli olup olmadığı belirlenir.</p>
-        <ul>
-            <li><strong>Peşin ödeme:</strong> Aynı tarih.</li>
-            <li><strong>Vadeli satış:</strong> 30/60/90 gün seçenekleri.</li>
-        </ul>
-        <img src="images/02 Alış Teklifi Vade Tarihi Seçimi.png" alt="Alış Teklifi Vade Tarihi Seçimi">
-
-        <h2>Adım 3: Döviz Tipi Seçme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Teklif edilen fiyatın hangi para birimiyle hesaplanacağını belirler.</p>
-        <ul>
-            <li><strong>TL:</strong> Yerel alışlar için.</li>
-            <li><strong>USD/EUR:</strong> Uluslararası alışlar veya döviz ile fiyat anlaşmaları için.</li>
-        </ul>
-        <img src="images/03 Döviz Tipi Seçimi.png" alt="Döviz Tipi Seçimi">
-
-        <h2>Adım 4: Alış Şubesi Seçme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Alış teklifinin hangi şube tarafından yapıldığını belirler.</p>
-        <img src="images/04 Alış Şubesi Seçimi.png" alt="Alış Şubesi Seçimi">
-
-        <h2>Adım 5: Sevk Şubesi Seçme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Siparişin hangi şubeden sevk edileceğini belirler.</p>
-        <img src="images/05 Sevk Şubesi Seçimi.png" alt="Sevk Şubesi Seçimi">
-
-        <h2>Adım 6: Teslim Şekli Seçme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Ürünün nasıl teslim alınacağını belirler.</p>
-        <ul>
-            <li><strong>Şantiye:</strong> Doğrudan inşaat veya proje alanına teslim edilir.</li>
-            <li><strong>Depo:</strong> Tedarikçi ürünü belirlenen bir depoya teslim eder.</li>
-        </ul>
-        <img src="images/06 Teslim Şekli Seçimi.png" alt="Teslim Şekli Seçimi">
-
-        <h2>Adım 7: Ödeme Kodu Seçme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Ödeme yöntemi belirlenir.</p>
-        <ul>
-            <li>Peşin + Çek</li>
-            <li>DBS (Doğrudan Borçlandırma Sistemi)</li>
-            <li>Havale</li>
-            <li>Çek</li>
-        </ul>
-        <img src="images/07 Ödeme Kodu Seçimi.png" alt="Ödeme Kodu Seçimi">
-
-        <h2>Adım 8: Tevkifat Kodu Seçme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Vergi kesinti oranlarını belirler.</p>
-        <ul>
-            <li>5/10 Tevkifat</li>
-            <li>9/10 Tevkifat</li>
-        </ul>
-        <img src="images/08 Tevkifat Kodu Seçimi.png" alt="Tevkifat Kodu Seçimi">
-
-        <h2>Adım 9: Nakliye Tutarı ve Takip İşlemleri</h2>
-        <p><strong>Bu alan neden önemli?</strong> Nakliye ücretlerinin alış teklifine dahil edilip edilmeyeceğini belirler.</p>
-        <ul>
-            <li><strong>Nakliye Dahil:</strong> Ürün fiyatına nakliye maliyeti eklenir.</li>
-            <li><strong>Nakliye Hariç:</strong> Tedarikçi kendi nakliyesini sağlar.</li>
-        </ul>
-        <img src="images/09 Nakliye Tutarı Ekleme.png" alt="Nakliye Tutarı Ekleme">
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,35 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satış Teklifine Giriş</title>
+    <title>Ders 1: Satış Teklifine Giriş</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">Satış İşlemleri</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sales_offer_intro.html" class="active">Ders 1: Satış Teklifine Giriş</a></li>
+                        <li><a href="sales_offer_creation.html">Ders 2: Satış Teklifi Oluşturma</a></li>
+                        <li><a href="sales_offer_approval.html">Ders 3: Satış Teklifi Onaylama</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <h1>Ders 1: Satış Teklifine Giriş</h1>
-        <h2>1. Satış Teklifi Nedir?</h2>
-        <p>Satış teklifi, müşterilere belirli bir fiyat ve şartlarla mal veya hizmet sunmak için hazırlanan bir belgedir.</p>
-
-        <h2>2. Satış Teklifi Sayfasına Nasıl Girilir?</h2>
-        <p>SmartNet ERP sistemi üzerinden Satış Teklifi ekranına erişim için şu adımlar izlenmelidir:</p>
-        <ul>
-            <li>Ana menüden Satış İşlemleri sekmesine tıklayın.</li>
-            <li>Satış Teklifi seçeneğini seçin.</li>
-            <li>Yeni bir satış teklifi oluşturmak için + Ticari Satış Teklifi veya + Fabrika Satış Teklifi butonlarından birine tıklayın.</li>
-        </ul>
-        
-        <h2>3. Satış Teklifi Ekranı Genel Yapısı</h2>
-        <img src="images/satis_teklif_ekrani.png" alt="Satış Teklif Ekranı">
-        
-        <h2>4. Satış Teklifi Listesinde Filtreleme ve Arama</h2>
-        <p>Satış teklifleri arasında kolayca arama yapmak için:</p>
-        <ul>
-            <li>Tarih aralığı seçin</li>
-            <li>Cari isimle arama yapın</li>
-            <li>Belge Tipine göre sıralama yapın</li>
-        </ul>
-
-        <a href="sales.html">Geri Dön</a>
+        <main class="content">
+            <h1>Ders 1: Satış Teklifine Giriş</h1>
+            
+            <h2>1. Satış Teklifi Nedir?</h2>
+            <p>Satış teklifi, müşterilere belirli bir fiyat ve şartlarla mal veya hizmet sunmak için hazırlanan bir belgedir.</p>
+            
+            <h2>2. Satış Teklifi Sayfasına Nasıl Girilir?</h2>
+            <p>SmartNet ERP üzerinden Satış Teklifi ekranına erişmek için şu adımları izleyin:</p>
+            <ul>
+                <li>Ana menüden <strong>Satış İşlemleri</strong> sekmesine tıklayın.</li>
+                <li><strong>Satış Teklifi</strong> seçeneğini seçin.</li>
+                <li>Yeni bir teklif oluşturmak için <strong>+ Ticari Satış Teklifi</strong> veya <strong>+ Fabrika Satış Teklifi</strong> butonlarından birine tıklayın.</li>
+            </ul>
+            <img src="images/Satis_Teklif_Giris_1.png" alt="Satış Teklifi Ekranı">
+            
+            <h2>3. Satış Teklifi Ekranı Genel Yapısı</h2>
+            <p>Satış teklifi ekranı aşağıdaki alanlardan oluşur:</p>
+            <ul>
+                <li><strong>Belge No:</strong> Her satış teklifine sistem tarafından otomatik olarak atanır.</li>
+                <li><strong>Tarih:</strong> Teklifin oluşturulma tarihi belirlenir.</li>
+                <li><strong>Vade Tarihi:</strong> Teklifin geçerlilik süresi girilir.</li>
+                <li><strong>Döviz Tipi:</strong> Teklifin hangi para birimi ile yapılacağı belirlenir.</li>
+                <li><strong>Müşteri:</strong> Teklifin sunulacağı müşteri seçilir.</li>
+            </ul>
+            <img src="images/Satis_Teklif_Giris_2.png" alt="Satış Teklifi Giriş">
+            
+            <h2>4. Satış Teklifi Listesinde Filtreleme ve Arama</h2>
+            <p>Satış teklifleri arasında kolayca arama yapmak için:</p>
+            <ul>
+                <li><strong>Tarih Aralığı:</strong> Belirli bir zaman dilimindeki satış tekliflerini listelemek için kullanılır.</li>
+                <li><strong>Cari İsimle Arama:</strong> Müşteri ismine göre satış tekliflerini görüntüleyebilirsiniz.</li>
+                <li><strong>Belge Tipine Göre Sıralama:</strong> Satış tekliflerini belge tipine göre sıralayabilirsiniz.</li>
+            </ul>
+            <img src="images/Satis_Teklif_Giris_3.png" alt="Satış Teklifi Listesi">
+            
+            <a href="sales.html">Geri Dön</a>
+        </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

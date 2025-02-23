@@ -7,51 +7,58 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
-        <div class="category">Sevkiyat İşlemleri Modülü</div>
-        <div class="lesson"><a href="shipment_order_entry.html" class="active">Ders 1: Sevk Emri Girişi</a></div>
-        <div class="lesson"><a href="shipment_approval.html">Ders 2: Sevk Onaylama</a></div>
-        <div class="lesson"><a href="transfer_between_warehouses.html">Ders 3: Depolar Arası Transfer</a></div>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">Sevkiyat İşlemleri</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="shipment_order_entry.html" class="active">Ders 1: Sevk Emri Girişi</a></li>
+                        <li><a href="shipment_approval.html">Ders 2: Sevk Onaylama</a></li>
+                        <li><a href="transfer_between_warehouses.html">Ders 3: Depolar Arası Transfer</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main class="content">
+            <h1>Ders 1: Sevk Emri Girişi</h1>
+            
+            <h2>1. Sevk Emri Nedir?</h2>
+            <p>Sevk emri, belirli bir siparişin müşteriye teslim edilmesi için oluşturulan belgedir. Bu belge, ürün detaylarını, sevk edilecek yeri ve teslimat tarihini içerir.</p>
+            
+            <h2>2. Sevk Emri Sayfasına Nasıl Girilir?</h2>
+            <ul>
+                <li>Ana menüden <strong>Sevkiyat İşlemleri</strong> sekmesine tıklayın.</li>
+                <li><strong>Sevk Emri Girişi</strong> seçeneğini seçin.</li>
+                <li>Yeni bir sevk emri oluşturmak için <strong>"Yeni Sevk Emri"</strong> butonuna tıklayın.</li>
+            </ul>
+            <img src="images/Sevk_Emri_Giris.png" alt="Sevk Emri Girişi">
+            
+            <h2>3. Sevk Emri Ekranı Genel Yapısı</h2>
+            <p>Sevk emri ekranı aşağıdaki ana bileşenlerden oluşur:</p>
+            <ul>
+                <li><strong>Sevk No:</strong> Her sevk emrine sistem tarafından otomatik olarak atanır.</li>
+                <li><strong>Sevk Tarihi:</strong> Ürünlerin sevk edileceği tarih girilir.</li>
+                <li><strong>Satış Şubesi:</strong> Sevki gerçekleştiren şube seçilir.</li>
+                <li><strong>Sevk Şubesi:</strong> Ürünlerin çıkış yapılacağı depo belirlenir.</li>
+                <li><strong>Müşteri Adı:</strong> Sevki yapılan müşteri seçilir.</li>
+                <li><strong>Sevk Ürünleri:</strong> Sevki yapılacak ürünler listelenir ve miktarları belirlenir.</li>
+            </ul>
+            
+            <h2>4. Sevk Emri Listesinde Filtreleme ve Arama</h2>
+            <p>Sevk emirleri arasında hızlıca arama yapmak için:</p>
+            <ul>
+                <li><strong>Tarih Aralığı:</strong> Belirli bir zaman dilimindeki sevk emirleri listelenebilir.</li>
+                <li><strong>Müşteri İsmi:</strong> Müşteri adı yazılarak ilgili sevk emirleri bulunabilir.</li>
+                <li><strong>Sevk Şubesine Göre Filtreleme:</strong> Belirli bir şubeden yapılan sevkler görüntülenebilir.</li>
+            </ul>
+            <img src="images/Sevk_Emri_Giris-1.png" alt="Sevk Emri Listesi">
+            <img src="images/Sevk_Emri_Giris-2.png" alt="Sevk Emri Filtreleme">
+        </main>
     </div>
-
-    <div class="content">
-        <h1>Ders 1: Sevk Emri Girişi</h1>
-
-        <h2>1. Sevk Emri Nedir?</h2>
-        <p>Sevk emri, belirli bir siparişin müşteriye teslim edilmesi için oluşturulan belgedir. Bu belge, ürün detaylarını, sevk edilecek yeri ve teslimat tarihini içerir.</p>
-
-        <h2>2. Sevk Emri Sayfasına Nasıl Girilir?</h2>
-        <ul>
-            <li>Ana menüden <strong>Sevkiyat İşlemleri</strong> sekmesine tıklayın.</li>
-            <li><strong>Sevk Emri Girişi</strong> seçeneğini seçin.</li>
-            <li>Yeni bir sevk emri oluşturmak için <strong>"Yeni Sevk Emri"</strong> butonuna tıklayın.</li>
-        </ul>
-
-        <img src="images/Sevk_Emri_Giris.png" alt="Sevk Emri Girişi">
-
-        <h2>3. Sevk Emri Ekranı Genel Yapısı</h2>
-        <p>Sevk emri ekranı aşağıdaki ana bileşenlerden oluşur:</p>
-        <ul>
-            <li><strong>Sevk No:</strong> Her sevk emrine sistem tarafından otomatik olarak atanır.</li>
-            <li><strong>Sevk Tarihi:</strong> Ürünlerin sevk edileceği tarih girilir.</li>
-            <li><strong>Satış Şubesi:</strong> Sevki gerçekleştiren şube seçilir.</li>
-            <li><strong>Sevk Şubesi:</strong> Ürünlerin çıkış yapılacağı depo belirlenir.</li>
-            <li><strong>Müşteri Adı:</strong> Sevki yapılan müşteri seçilir.</li>
-            <li><strong>Sevk Ürünleri:</strong> Sevki yapılacak ürünler listelenir ve miktarları belirlenir.</li>
-        </ul>
-
-        <h2>4. Sevk Emri Listesinde Filtreleme ve Arama</h2>
-        <p>Sevk emirleri arasında hızlıca arama yapmak için:</p>
-        <ul>
-            <li><strong>Tarih Aralığı:</strong> Üst kısımdaki tarih filtreleme alanından belirli bir zaman dilimindeki sevk emirleri listelenebilir.</li>
-            <li><strong>Müşteri İsmi:</strong> Müşteri adı yazılarak ilgili sevk emirleri bulunabilir.</li>
-            <li><strong>Sevk Şubesine Göre Filtreleme:</strong> Belirli bir şubeden yapılan sevkler görüntülenebilir.</li>
-        </ul>
-
-        <img src="images/Sevk_Emri_Giris-1.png" alt="Sevk Emri Listesi">
-        <img src="images/Sevk_Emri_Giris-2.png" alt="Sevk Emri Filtreleme">
-
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
