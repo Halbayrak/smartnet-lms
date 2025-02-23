@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNet ERP LMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
+        <div class="category">Satış İşlemleri Modülü</div>
+        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_intro')">Ders 1: Satış Teklifine Giriş</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_creation')">Ders 2: Satış Teklifi Oluşturma</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_approval')">Ders 3: Satış Teklifi Onaylama</a></div>
+        
+        <div class="category">Alış İşlemleri Modülü</div>
+        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_intro')">Ders 1: Alış Teklifine Giriş</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_creation')">Ders 2: Alış Teklifi Oluşturma</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_approval')">Ders 3: Alış Teklifi Onaylama</a></div>
+        
+        <div class="category">Sevkiyat İşlemleri Modülü</div>
+        <div class="lesson"><a href="#" onclick="loadLesson('shipment_order_entry')">Ders 1: Sevk Emri Girişi</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('shipment_approval')">Ders 2: Sevk Onaylama</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('transfer_between_warehouses')">Ders 3: Depolar Arası Transfer</a></div>
+    </div>
+    
+    <div class="content">
+        <h2>SMARTNET VİDEOLAR</h2>
+        <input type="text" class="search-bar" placeholder="Arama...">
+        
+        <div class="video-filter">
+            <select>
+                <option>İşlem Tipi</option>
+                <option>Satış</option>
+                <option>Alış</option>
+                <option>Sevkiyat</option>
+            </select>
+            <select>
+                <option>Satış Şubesi</option>
+                <option>İstanbul</option>
+                <option>Ankara</option>
+                <option>İzmir</option>
+            </select>
+            <select>
+                <option>Sevk Şubesi</option>
+                <option>Merkez</option>
+                <option>Depo</option>
+            </select>
+            <select>
+                <option>Ürün</option>
+                <option>İnşaat Demiri</option>
+                <option>Çelik Hasır</option>
+            </select>
+        </div>
+        
+        <div class="video-container" id="lesson-content">
+            <h3>Örnek Video</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/sample-video" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

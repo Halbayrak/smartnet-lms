@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background: #f4f4f4;
+    padding: 15px;
+    border-right: 2px solid #ddd;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+.category {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.lesson {
+    margin-left: 15px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.video-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    margin-top: 15px;
+}
