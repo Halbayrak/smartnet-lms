@@ -1,42 +1,17 @@
 function loadLesson(lessonId) {
-    const lessonContent = {
-        "sales_offer_intro": {
-            "title": "Satış Teklifine Giriş",
-            "video": "https://www.youtube.com/embed/sample-video-1",
-            "description": "Satış teklifi, müşterilere belirli bir fiyat ve şartlarla mal veya hizmet sunmak için hazırlanan bir belgedir."
-        },
-        "sales_offer_creation": {
-            "title": "Satış Teklifi Oluşturma",
-            "video": "https://www.youtube.com/embed/sample-video-2",
-            "description": "Satış Teklifi Oluşturma süreci hakkında detaylı bilgi."
-        },
-        "sales_offer_approval": {
-            "title": "Satış Teklifi Onaylama",
-            "video": "https://www.youtube.com/embed/sample-video-3",
-            "description": "Satış Tekliflerinin onay süreci hakkında bilgi."
-        },
-        "purchase_offer_intro": {
-            "title": "Alış Teklifine Giriş",
-            "video": "https://www.youtube.com/embed/sample-video-4",
-            "description": "Alış Teklifleri ile ilgili temel bilgiler."
-        },
-        "purchase_offer_creation": {
-            "title": "Alış Teklifi Oluşturma",
-            "video": "https://www.youtube.com/embed/sample-video-5",
-            "description": "Alış Teklifi oluşturma süreci detaylı olarak anlatılmaktadır."
-        },
-        "purchase_offer_approval": {
-            "title": "Alış Teklifi Onaylama",
-            "video": "https://www.youtube.com/embed/sample-video-6",
-            "description": "Alış Tekliflerinin onaylanma süreci."
-        }
-    };
-
-    if (lessonContent[lessonId]) {
-        document.getElementById("lesson-content").innerHTML = `
-            <h3>${lessonContent[lessonId].title}</h3>
-            <iframe width="100%" height="315" src="${lessonContent[lessonId].video}" allowfullscreen></iframe>
-            <p>${lessonContent[lessonId].description}</p>
-        `;
+    let content = document.getElementById('lesson-content');
+    switch (lessonId) {
+        case 'sales_offer_intro':
+            content.innerHTML = `<h2>Ders 1: Satış Teklifine Giriş</h2><p>Satış teklifi, müşterilere sunulan fiyat ve şartları içeren bir belgedir.</p><img src='images/sales_offer_intro.png'>`;
+            break;
+        case 'sales_offer_creation':
+            content.innerHTML = `<h2>Ders 2: Satış Teklifi Oluşturma</h2><p>Teklif tarihini girin, teslim tarihi belirleyin ve ödeme seçeneklerini ekleyin.</p><img src='images/sales_offer_creation.png'>`;
+            break;
+        case 'sales_offer_approval':
+            content.innerHTML = `<h2>Ders 3: Satış Teklif Onaylama</h2><p>Teklif onay süreçlerini takip edin ve filtreleme seçeneklerini kullanın.</p><img src='images/sales_offer_approval.png'>`;
+            break;
+        default:
+            content.innerHTML = `<h2>SMARTNET EĞİTİM VİDEOLARI</h2><p>Lütfen bir ders seçin.</p>`;
+            break;
     }
 }

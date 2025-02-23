@@ -8,85 +8,33 @@
 </head>
 <body>
     <div class="sidebar">
-        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
+        <h2>SMARTNET EĞİTİM DOKÜMANTASYONU</h2>
+
+        <!-- Satış İşlemleri Modülü -->
         <div class="category">Satış İşlemleri Modülü</div>
-        <div class="lesson"><a href="#ders1">Ders 1: Satış Teklifine Giriş</a></div>
-        <div class="lesson"><a href="#ders2">Ders 2: Satış Teklifi Oluşturma</a></div>
-        <div class="lesson"><a href="#ders3">Ders 3: Satış Teklif Onaylama</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_intro')">Ders 1: Satış Teklifine Giriş</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_creation')">Ders 2: Satış Teklifi Oluşturma</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('sales_offer_approval')">Ders 3: Satış Teklif Onaylama</a></div>
+
+        <!-- Alış İşlemleri Modülü -->
+        <div class="category">Alış İşlemleri Modülü</div>
+        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_intro')">Ders 1: Alış Teklifine Giriş</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_creation')">Ders 2: Alış Teklifi Oluşturma</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('purchase_offer_approval')">Ders 3: Alış Teklifi Onaylama</a></div>
+
+        <!-- Sevkiyat İşlemleri Modülü -->
+        <div class="category">Sevkiyat İşlemleri Modülü</div>
+        <div class="lesson"><a href="#" onclick="loadLesson('shipment_order_entry')">Ders 1: Sevk Emri Girişi</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('shipment_approval')">Ders 2: Sevk Onaylama</a></div>
+        <div class="lesson"><a href="#" onclick="loadLesson('transfer_between_warehouses')">Ders 3: Depolar Arası Transfer</a></div>
     </div>
     
-    <div class="content">
-        <h2 id="ders1">Ders 1: Satış Teklifine Giriş</h2>
-        
-        <h3>1. Satış Teklifi Nedir?</h3>
-        <p>Satış teklifi, müşterilere belirli bir fiyat ve şartlarla mal veya hizmet sunmak için hazırlanan bir belgedir. Bu belgede müşteriye sunulan fiyat, teslimat şartları, ödeme koşulları ve teklifin geçerlilik süresi gibi bilgiler yer alır.</p>
-        
-        <h3>2. Satış Teklifi Sayfasına Nasıl Girilir?</h3>
-        <p>SmartNet ERP sistemi üzerinden Satış Teklifi ekranına erişim için şu adımlar izlenmelidir:</p>
-        <ul>
-            <li>Ana menüden <strong>Satış İşlemleri</strong> sekmesine tıklayın.</li>
-            <li><strong>Satış Teklifi</strong> seçeneğini seçin.</li>
-            <li>Yeni bir satış teklifi oluşturmak için <strong>+ Ticari Satış Teklifi</strong> veya <strong>+ Fabrika Satış Teklifi</strong> butonlarından birine tıklayın.</li>
-        </ul>
-        <p><strong>Ticari Satış Teklifi:</strong> Depoda hazır stokta bulunan bir ürünün (örneğin INS DEMIRI) satış teklifinin hazırlanması içindir.</p>
-        <p><strong>Fabrika Satış Teklifi:</strong> Üretimi gerçekleştirilecek bir ürünün satış teklifinin hazırlanması içindir. Bu teklifler onaylandığında üretim planlamaya alınacaktır.</p>
-        <p><strong>İhracat Belge:</strong> İhracat veya İhraç kayıtlı satış tekliflerinin hazırlanması içindir.</p>
-        
-        <img src="images/Satış_Teklif_Kayıtları_Giriş-1.png" alt="Satış Teklif Kayıtları Giriş 1">
-        <img src="images/Satış_Teklif_Kayıtları_Giriş-2.png" alt="Satış Teklif Kayıtları Giriş 2">
-        <img src="images/Fabrika_Satış_Teklif_Farkı.png" alt="Fabrika Satış Teklif Farkı">
-        
-        <h2 id="ders2">Ders 2: Satış Teklifi Oluşturma</h2>
-        
-        <h3>Adım 1: Teklif Tarihini Girme</h3>
-        <p>Bu alan neden önemli? Teklifin geçerlilik süreci bu tarihe bağlıdır.</p>
-        <ul>
-            <li>Bugünün tarihi: Yeni teklif için</li>
-            <li>Geçmiş tarih: Gerçekleşen fakat kaydedilmemiş teklifler için</li>
-            <li>Gelecek tarih: Planlanan teklifler için</li>
-        </ul>
-        <img src="images/Teklifin_Tarih_Seçimi.png" alt="Teklifin Tarih Seçimi">
-        
-        <h3>Adım 2: Teslim Tarihini Seçme</h3>
-        <p>Bu alan neden önemli? Siparişin ne zaman teslim edileceğini belirtir.</p>
-        <ul>
-            <li>Stoktan satış: En erken tarih</li>
-            <li>Özel üretim: Tedarik süresine göre belirlenen tarih</li>
-        </ul>
-        <img src="images/Teklifin_Teslim_Tarihi.png" alt="Teklifin Teslim Tarihi">
-        
-        <h3>Adım 3: Vade Tarihini Belirleme</h3>
-        <p>Bu alan neden önemli? Ödeme planları bu tarihe göre hesaplanır.</p>
-        <ul>
-            <li>Peşin ödeme: Aynı tarih</li>
-            <li>Vadeli satış: 30/60/90 gün sonra</li>
-        </ul>
-        <img src="images/Teklifin_Vade_Tarihi.png" alt="Teklifin Vade Tarihi">
-        
-        <h3>Adım 4: Döviz Tipi Seçme</h3>
-        <p>Bu alan neden önemli? Teklif edilen fiyatın hangi para birimiyle hesaplanacağını belirler.</p>
-        <ul>
-            <li>TL: Yerel satışlar</li>
-            <li>USD/EUR: Uluslararası satışlar veya döviz fiyat anlaşmalar</li>
-        </ul>
-        <img src="images/Döviz_Tipi.png" alt="Döviz Tipi">
-        
-        <h3>Adım 5: Satış Şubesi Seçme</h3>
-        <p>Bu alan neden önemli? Teklifin hangi şube tarafından yapıldığını belirler.</p>
-        <img src="images/Satış_Şubesi_Seçimi.png" alt="Satış Şubesi Seçimi">
-        
-        <h3>Adım 6: Sevk Şubesi Seçme</h3>
-        <p>Bu alan neden önemli? Siparişin hangi şubeden sevk edileceğini belirler.</p>
-        <img src="images/Sevk_Şubesi_Seçimi.png" alt="Sevk Şubesi Seçimi">
-        
-        <h3>Adım 7: Teslim Şekli Seçme</h3>
-        <p>Bu alan neden önemli? Ürünün müşteriye nasıl teslim edileceğini belirler.</p>
-        <img src="images/Teslim_Şekli.png" alt="Teslim Şekli">
-        
-        <h3>Adım 8: Ödeme Kodu Seçme</h3>
-        <p>Bu alan neden önemli? Satışın hangi ödeme yöntemi ile yapılacağını belirler.</p>
-        <img src="images/Ödeme_Kodu.png" alt="Ödeme Kodu">
+    <!-- Main Content -->
+    <div class="content" id="lesson-content">
+        <h2>SMARTNET VİDEOLAR</h2>
+        <p>Lütfen bir ders seçiniz.</p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
