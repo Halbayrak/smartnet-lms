@@ -7,40 +7,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="sidebar">
+        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
+        <div class="category">Satış İşlemleri Modülü</div>
+        <div class="lesson"><a href="sales_offer_intro.html">Ders 1: Satış Teklifine Giriş</a></div>
+        <div class="lesson"><a href="sales_offer_creation.html">Ders 2: Satış Teklifi Oluşturma</a></div>
+        <div class="lesson"><a href="sales_offer_approval.html" class="active">Ders 3: Satış Teklif Onaylama</a></div>
+    </div>
+
+    <div class="content">
         <h1>Ders 3: Satış Teklif Onaylama</h1>
-        
+
         <h2>Adım 1: Satış Teklif Onaylama Sayfasına Giriş</h2>
-        <p><strong>Bu alan neden önemli?</strong> Satış teklifinin yürürlüğe girmesi için yetkili kişi tarafından onaylanması gerekmektedir.</p>
-        <p><strong>Nasıl erişilir?</strong></p>
-        <ul>
-            <li>Satış İşlemleri menüsüne girin.</li>
-            <li>Satış Teklif Onaylama seçeneğini seçin.</li>
-            <li>Açılan ekrandan onay bekleyen teklifleri görüntüleyebilirsiniz.</li>
-        </ul>
-        <img src="images/satis_teklif_onaylama_giris.png" alt="Satış Teklif Onaylama Giriş">
+        <p>Bu alan neden önemli? Satış teklifinin yürürlüğe girmesi için yetkili kişi tarafından onaylanması gerekmektedir.</p>
+        <img src="images/Satış Teklif Onaylama Giriş.png" alt="Satış Teklif Onaylama Giriş">
 
         <h2>Adım 2: Onay Bekleyen Teklifleri Görüntüleme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Mevcut ve geçmiş satış tekliflerinin onay durumunu gösterir.</p>
-        <p><strong>Filtreleme Seçenekleri:</strong></p>
-        <ul>
-            <li>Tarih aralığı belirleme</li>
-            <li>Müşteri adına göre arama yapma</li>
-            <li>Satış şubesine göre sıralama</li>
-        </ul>
-        <img src="images/onay_bekleyen_teklifler.png" alt="Onay Bekleyen Teklifler">
+        <p>Bu alan neden önemli? Mevcut ve geçmiş satış tekliflerinin onay durumunu gösterir.</p>
+        <img src="images/Satış Teklif Onaylama Giriş-1.png" alt="Onay Bekleyen Teklifler 1">
+        <img src="images/Satış Teklif Onaylama Giriş-2.png" alt="Onay Bekleyen Teklifler 2">
 
         <h2>Adım 3: Teklif Onaylama ve Reddetme</h2>
-        <p><strong>Bu alan neden önemli?</strong> Teklifin yürürlüğe girmesi veya revize edilmesi için onay ya da red işlemi yapılmalıdır.</p>
+        <p>Bu alan neden önemli? Teklifin yürürlüğe girmesi veya revize edilmesi için onay ya da red işlemi yapılmalıdır.</p>
+        
         <ul>
             <li>✅ <strong>Onay Ver:</strong> Teklif müşteriye sunulmak üzere onaylanır.</li>
-            <li>❌ <strong>Red Ver:</strong> Eksik veya hatalı bilgiler nedeniyle teklif reddedilir.</li>
-            <li>🖨️ <strong>Yazdır:</strong> Teklif çıktısı alınabilir.</li>
+            <li>❌ <strong>Red Ver:</strong> Eksik veya hatalı bilgiler nedeniyle teklif reddedilir. Açıklama girilmesi faydalıdır.</li>
+            <li>🖨️ <strong>Yazdır:</strong> Teklif çıktısı alınabilir, müşteriye iletilir.</li>
             <li>🗑️ <strong>Sil:</strong> Geçersiz teklifler sistemden kaldırılabilir.</li>
         </ul>
-        <img src="images/satis_teklif_onaylama.png" alt="Satış Teklif Onaylama">
-
-        <a href="sales.html">Geri Dön</a>
+        <img src="images/Satış Teklif Onaylama.png" alt="Satış Teklif Onaylama">
     </div>
 </body>
 </html>

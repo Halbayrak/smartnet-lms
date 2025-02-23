@@ -7,11 +7,50 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="sidebar">
+        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
+        <div class="category">Sevkiyat İşlemleri Modülü</div>
+        <div class="lesson"><a href="shipment_order_entry.html">Ders 1: Sevk Emri Girişi</a></div>
+        <div class="lesson"><a href="shipment_approval.html">Ders 2: Sevk Onaylama</a></div>
+        <div class="lesson"><a href="transfer_between_warehouses.html" class="active">Ders 3: Depolar Arası Transfer</a></div>
+    </div>
+
+    <div class="content">
         <h1>Ders 3: Depolar Arası Transfer</h1>
-        <p>Depolar arası ürün transfer süreci.</p>
-        <img src="images/depo_transfer.png" alt="Depolar Arası Transfer">
-        <a href="shipment.html">Geri Dön</a>
+
+        <h2>1. Depolar Arası Transfer Nedir?</h2>
+        <p>Depolar arası transfer işlemi, bir depodan başka bir depoya malzeme sevkiyatını yönetmek için kullanılır.</p>
+
+        <h2>2. Depolar Arası Transfer Sayfasına Nasıl Girilir?</h2>
+        <ul>
+            <li>Ana menüden <strong>Sevkiyat İşlemleri</strong> sekmesine tıklayın.</li>
+            <li><strong>Depolar Arası Transfer</strong> seçeneğini seçin.</li>
+            <li>Mevcut transfer kayıtları görüntülenecektir.</li>
+        </ul>
+
+        <img src="images/Depolar_Arasi_Transfer_Giris.png" alt="Depolar Arası Transfer Giriş">
+
+        <h2>3. Yeni Depo Transferi Oluşturma</h2>
+        <p>Yeni bir depo transferi oluşturmak için aşağıdaki adımları izleyin:</p>
+        <ol>
+            <li><strong>Kaynak Depo:</strong> Malzemenin çıkacağı depoyu seçin.</li>
+            <li><strong>Hedef Depo:</strong> Malzemenin gideceği depoyu belirleyin.</li>
+            <li><strong>Ürün Seçimi:</strong> Transfer edilecek ürünleri listeye ekleyin.</li>
+            <li><strong>Miktar Belirleme:</strong> Transfer edilecek ürünlerin miktarını girin.</li>
+            <li><strong>Kayıt ve Onay:</strong> Transfer kaydını oluşturun ve yöneticinin onayına sunun.</li>
+        </ol>
+
+        <img src="images/Depolar_Arasi_Transfer_Yeni_Kayit.png" alt="Yeni Depo Transfer Kaydı">
+
+        <h2>4. Transfer Takibi ve Onay</h2>
+        <p>Oluşturulan transfer kayıtlarının takibi şu şekilde yapılabilir:</p>
+        <ul>
+            <li><strong>Onay Bekleyen Transferler:</strong> Transfer işleminin onay sürecinde olduğunu gösterir.</li>
+            <li><strong>Tamamlanan Transferler:</strong> İşlemi tamamlanan ve onaylanan transferler listelenir.</li>
+            <li><strong>Reddedilen Transferler:</strong> İlgili gerekçelerle reddedilen transferler görüntülenebilir.</li>
+        </ul>
+
+        <img src="images/Depolar_Arasi_Transfer_Liste.png" alt="Depolar Arası Transfer Listesi">
     </div>
 </body>
 </html>

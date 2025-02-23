@@ -3,15 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alış Teklifi Oluşturma</title>
+    <title>Ders 2: Alış Teklifi Oluşturma</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="sidebar">
+        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
+        <div class="category">Alış İşlemleri Modülü</div>
+        <div class="lesson"><a href="purchase.html">Geri: Alış İşlemleri Modülü</a></div>
+        <div class="lesson"><a href="purchase_offer_intro.html">Ders 1: Alış Teklifine Giriş</a></div>
+        <div class="lesson"><a href="purchase_offer_creation.html" class="active">Ders 2: Alış Teklifi Oluşturma</a></div>
+        <div class="lesson"><a href="purchase_offer_approval.html">Ders 3: Alış Teklifi Onaylama</a></div>
+    </div>
+
+    <div class="content">
         <h1>Ders 2: Alış Teklifi Oluşturma</h1>
-        <p>Bu bölümde alış teklifinin nasıl oluşturulacağını öğrenin.</p>
-        <img src="images/alis_teklifi_creation.png" alt="Alış Teklifi Oluşturma">
-        <a href="purchase.html">Geri Dön</a>
+
+        <h2>Adım 1: Alış Teklif Tarihini Girme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Alış teklifinin geçerlilik süreci bu tarihe bağlıdır.</p>
+        <ul>
+            <li><strong>Bugünün tarihi:</strong> Yeni teklif için kullanılır.</li>
+            <li><strong>Geçmiş tarih:</strong> Gerçekleşen fakat kaydedilmemiş teklifler için girilir.</li>
+            <li><strong>Gelecek tarih:</strong> Planlanan teklifler için belirlenir.</li>
+        </ul>
+        <img src="images/01 Alış Teklif Tarihi Seçimi.png" alt="Alış Teklif Tarihi Seçimi">
+
+        <h2>Adım 2: Vade Tarihini Belirleme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Tedarikçiye yapılacak ödemenin vadeli olup olmadığı belirlenir.</p>
+        <ul>
+            <li><strong>Peşin ödeme:</strong> Aynı tarih.</li>
+            <li><strong>Vadeli satış:</strong> 30/60/90 gün seçenekleri.</li>
+        </ul>
+        <img src="images/02 Alış Teklifi Vade Tarihi Seçimi.png" alt="Alış Teklifi Vade Tarihi Seçimi">
+
+        <h2>Adım 3: Döviz Tipi Seçme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Teklif edilen fiyatın hangi para birimiyle hesaplanacağını belirler.</p>
+        <ul>
+            <li><strong>TL:</strong> Yerel alışlar için.</li>
+            <li><strong>USD/EUR:</strong> Uluslararası alışlar veya döviz ile fiyat anlaşmaları için.</li>
+        </ul>
+        <img src="images/03 Döviz Tipi Seçimi.png" alt="Döviz Tipi Seçimi">
+
+        <h2>Adım 4: Alış Şubesi Seçme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Alış teklifinin hangi şube tarafından yapıldığını belirler.</p>
+        <img src="images/04 Alış Şubesi Seçimi.png" alt="Alış Şubesi Seçimi">
+
+        <h2>Adım 5: Sevk Şubesi Seçme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Siparişin hangi şubeden sevk edileceğini belirler.</p>
+        <img src="images/05 Sevk Şubesi Seçimi.png" alt="Sevk Şubesi Seçimi">
+
+        <h2>Adım 6: Teslim Şekli Seçme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Ürünün nasıl teslim alınacağını belirler.</p>
+        <ul>
+            <li><strong>Şantiye:</strong> Doğrudan inşaat veya proje alanına teslim edilir.</li>
+            <li><strong>Depo:</strong> Tedarikçi ürünü belirlenen bir depoya teslim eder.</li>
+        </ul>
+        <img src="images/06 Teslim Şekli Seçimi.png" alt="Teslim Şekli Seçimi">
+
+        <h2>Adım 7: Ödeme Kodu Seçme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Ödeme yöntemi belirlenir.</p>
+        <ul>
+            <li>Peşin + Çek</li>
+            <li>DBS (Doğrudan Borçlandırma Sistemi)</li>
+            <li>Havale</li>
+            <li>Çek</li>
+        </ul>
+        <img src="images/07 Ödeme Kodu Seçimi.png" alt="Ödeme Kodu Seçimi">
+
+        <h2>Adım 8: Tevkifat Kodu Seçme</h2>
+        <p><strong>Bu alan neden önemli?</strong> Vergi kesinti oranlarını belirler.</p>
+        <ul>
+            <li>5/10 Tevkifat</li>
+            <li>9/10 Tevkifat</li>
+        </ul>
+        <img src="images/08 Tevkifat Kodu Seçimi.png" alt="Tevkifat Kodu Seçimi">
+
+        <h2>Adım 9: Nakliye Tutarı ve Takip İşlemleri</h2>
+        <p><strong>Bu alan neden önemli?</strong> Nakliye ücretlerinin alış teklifine dahil edilip edilmeyeceğini belirler.</p>
+        <ul>
+            <li><strong>Nakliye Dahil:</strong> Ürün fiyatına nakliye maliyeti eklenir.</li>
+            <li><strong>Nakliye Hariç:</strong> Tedarikçi kendi nakliyesini sağlar.</li>
+        </ul>
+        <img src="images/09 Nakliye Tutarı Ekleme.png" alt="Nakliye Tutarı Ekleme">
     </div>
 </body>
 </html>

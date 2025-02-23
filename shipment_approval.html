@@ -7,11 +7,50 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="sidebar">
+        <h2>SMARNET EĞİTİM DOKÜMANTASYONU</h2>
+        <div class="category">Sevkiyat İşlemleri Modülü</div>
+        <div class="lesson"><a href="shipment_order_entry.html">Ders 1: Sevk Emri Girişi</a></div>
+        <div class="lesson"><a href="shipment_approval.html" class="active">Ders 2: Sevk Onaylama</a></div>
+        <div class="lesson"><a href="transfer_between_warehouses.html">Ders 3: Depolar Arası Transfer</a></div>
+    </div>
+
+    <div class="content">
         <h1>Ders 2: Sevk Onaylama</h1>
-        <p>Sevk işlemlerinin onaylanması süreci.</p>
-        <img src="images/sevk_onaylama.png" alt="Sevk Onaylama">
-        <a href="shipment.html">Geri Dön</a>
+
+        <h2>1. Sevk Onayı Nedir?</h2>
+        <p>Sevk onayı, sevk emrinin lojistik veya depo yetkilileri tarafından kontrol edilip, nakliye sürecinin başlatılmasını sağlayan işlemdir.</p>
+
+        <h2>2. Sevk Onaylama Sayfasına Nasıl Girilir?</h2>
+        <ul>
+            <li>Ana menüden <strong>Sevkiyat İşlemleri</strong> sekmesine tıklayın.</li>
+            <li><strong>Sevk Onaylama</strong> seçeneğini seçin.</li>
+            <li>Onay bekleyen sevk emirleri listelenecektir.</li>
+        </ul>
+
+        <img src="images/Sevk_Onaylama_Giris.png" alt="Sevk Onaylama Giriş">
+
+        <h2>3. Onay Bekleyen Sevk Emirlerini Görüntüleme</h2>
+        <p>Bu ekranda, geçmiş ve mevcut sevk emirleri görüntülenebilir ve duruma göre işlem yapılabilir.</p>
+        <p><strong>Filtreleme Seçenekleri:</strong></p>
+        <ul>
+            <li><strong>Tarih Aralığı:</strong> Belirli bir zaman dilimindeki sevk emirlerini listelemek için kullanılabilir.</li>
+            <li><strong>Müşteri Adına Göre Arama:</strong> Müşteri ismi yazılarak sevk emirleri aranabilir.</li>
+            <li><strong>Sevk Şubesine Göre Filtreleme:</strong> Sevklerin hangi şubeden gerçekleştirildiğine göre listeleme yapılabilir.</li>
+        </ul>
+
+        <img src="images/Sevk_Onaylama_Liste.png" alt="Sevk Onaylama Listesi">
+
+        <h2>4. Sevk Onaylama veya Reddetme</h2>
+        <p>Sevk emrinin onaylanması veya reddedilmesi gereken durumlar olabilir.</p>
+        <p><strong>Seçenekler:</strong></p>
+        <ul>
+            <li>✅ <strong>Onay Ver:</strong> Sevk emri lojistik süreçlere aktarılır ve sevkiyat başlatılır.</li>
+            <li>❌ <strong>Red Ver:</strong> Eksik bilgi veya yanlış sevk işlemi nedeniyle sevk emri iptal edilir.</li>
+            <li>📄 <strong>Sevk Fişi Yazdır:</strong> Sevk emrinin çıktısı alınarak nakliye ekibine iletilebilir.</li>
+        </ul>
+
+        <img src="images/Sevk_Onaylama_Islem.png" alt="Sevk Onaylama İşlem">
     </div>
 </body>
 </html>
